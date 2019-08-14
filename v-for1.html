@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app2">
+    <ol>
+        <li v-for="item in items">
+        {{item.type}}
+            {{item.value}}
+        </li>
+    </ol>
+</div>
+<script>
+    new Vue({
+        el:"#app2",
+        data:{
+            items:[
+                {
+                    type:"水果",
+                    value:"苹果"
+                },
+                {
+                    type:"主食",
+                    value:"米饭"
+                },
+                {
+                    type:"炒菜",
+                    value:"西红市炒鸡蛋"
+                }
+                ]
+
+        }
+    })
+</script>
+</body>
+</html>

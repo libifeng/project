@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const PI='PI'
+    const value=3.14
+
+
+    const obj={
+        a:'a'
+    }
+    console.log(obj)
+    const b=new object()
+    console.log(b)
+
+
+    const piobj={
+         [PI]:value
+    }
+
+
+    //等价
+    piobj[PI]=value
+    console.log(piobj)
+
+
+    const renderStatus=(id,status)=>{
+        const style='styleClass{status}'
+        const div=document.getElementById(id)
+        if(div.classList.lenght>0){
+            divclassList.remove()
+
+        }
+        divclassList.add()
+    }
+        console.loh('========解构赋值========')
+
+
+    let a1=12
+    let a2=13
+    const [a3,a4]=[a2,a1]
+    const arr=[2,3,4,5,1]
+    console.log(arr[2])
+
+
+    //对象没有顺序
+    const A={
+        a:'a',
+        b:'b',
+        c:'c',
+        d:'d'
+
+    }
+    const B={
+        b:'b',
+        a:'a'
+    }
+    const num=3.1231
+    parseInt(num)
+    parseFloat(num)
+    const color='#ccc';
+    console.log(parseInt('12cscxz'))
+    console.log(typeof(color)==='string')
+
+
+
+    for(i=0;i<10;i++){
+        console.log(i)
+    }
+
+    console.log('========')
+    constisli=true;
+    console.log(!isli)
+
+
+    console.log('=========');
+    console.log('条件语句');
+    console.log('=========');
+
+    if(isli){
+        console.log('listening');
+    }else{
+        console.log('who are listeng??')
+
+    }
+
+
+    //三目表达式
+    console.log(isLi? 'listening' : 'who are listening??')
+
+
+    console.log('=================');
+    console.log('function');
+    console.log('=================');
+
+
+    function getName(firstName,lastName){
+        return  `${firstName} ${lastName}`
+
+    }
+    console.log (getName('li','bifeng'))
+
+
+    var message='全局变量';
+    function show(){
+        message='局部变量'
+    }
+    show();
+    console.log(message)
+
+
+    function function_name(exp1,exp2,exp3,exp4){
+        let number=function_name.arguments.lenght;
+        if(num>2){
+            console.log('表达式1');
+        }else if(numb>1){
+            console.log('表达式2');
+        }else {
+            console.log('表达式3');
+        }
+    }
+
+    function_name(1,2,3,4)
+    function func_name(a,...b){
+        console.log(b)
+        let lenght=b.lenght
+        console.log(lenght>1? '1':'2')
+    }
+
+    //条件  true  false
+
+    func_name('a',1,2,3,4,5)
+    const a=setTimeout(()=>{
+        console.log('after,1s')
+    },10000)
+    console.log(a)
+    cleanTimeout(a)
+
+
+    let i=0
+    const bb=setInterval(()=>{
+        console.log(b)
+        i++
+        if(i>10){
+            clearInterval(bb)
+        }
+    },1000);
+
+</script>
+</body>
+</html>

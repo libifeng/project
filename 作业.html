@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const PI='PI'
+    const value=3.14
+
+
+    const  obj={
+        a:'a'
+    }
+      console.log(obj)
+    const b= new object()
+    console.log(b)
+
+
+    const piobj={
+        [PI]:value
+    }
+    //等价
+    piobj[PI]= value
+    console.log(piobj)
+
+
+    const  renderStatus =(id, status) => {
+        const style='styleClass{status}'
+        const div=document.getElementById(id)
+        if(div.classList.lenght>0){
+            divclassList.remove()
+        }
+             divclassList.add(style)
+    }
+          console.log('====解构赋值===')
+
+
+    let a1=12
+    let a2=13
+    const [a3,a4]=[a2,a1]
+    const arr=[2,3,4,5,1]
+    console.log(arr[2])
+
+
+    //对象没有顺序
+      const A={
+        a:'a',
+        b:'b',
+        c:'c',
+        d:'d'
+
+    }
+       const B={
+        b:'b',
+        a:'a'
+       }
+       const{c:d, ...args}=A
+         console.log(d);
+         console.log(args)
+
+    const numb=3.1231
+    parstInt(num)
+    parstFloat(num)
+
+
+    const color='#ccc'
+    console.log(parseInt('12cs3cxz'))
+    console.log(typeof(color)==='string')
+
+
+    for(i=0;i<10;i++) {
+        console.log(i)
+    }
+        console.log('for ++i')
+        for(i=0;i<10;++i){
+          console.log(i)
+
+    }
+      console.log('======')
+    const isli=true
+    consoe.log(!isLi)
+
+    console.log('====================================');
+    console.log("条件语句");
+    console.log('====================================');
+
+    if(isLi) {
+        console.log('listening')
+    } else {
+        console.log('who are listening??')
+    }
+    // 三目表达式， 三元表达式
+    // isLi ? console.log(listening) : console.log('who are listening??')
+    console.log(isLi? 'listening' : 'who are listening??')
+
+
+    console.log('====================================');
+    console.log('function');
+    console.log('====================================');
+
+
+    function getName (firstName, lastName) {
+        return `${firstName} ${lastName}`
+    }
+    console.log(getName('li', 'bifeng'))
+
+
+    const GetName = (firstName, lastName) => {
+        return `${firstName} ${lastName}`
+    }
+
+
+    console.log(GetName('li', 'bifeng'))
+
+
+
+    var message = "全局变量";
+    function show(){
+        // var message ;
+        message = "局部变量"
+    }
+    show();
+    console.log(message);
+
+
+
+    function function_name(exp1,exp2,exp3,exp4){
+        let number= function_name.arguments.length;
+        if(number>2){
+            console.log('表达式1');
+        }else if(number> 1){
+            console.log('表达式2');
+        }else{
+            console.log('表达式3');
+        }
+    }
+    function_name(1,2,3,4)
+    function func_name(a, ...b) {
+        console.log(b)
+        let length = b.length
+        console.log(length > 1 ? '1' : '2')
+    }
+    // 条件 ？ true : false
+    func_name('a',1, 2,3,4,5)
+
+
+    const a =setTimeout(() => {
+        console.log('after 1s')
+    }, 1000)
+    console.log(a)
+    clearTimeout(a)
+
+
+    let i = 0
+    const bb = setInterval(() => {
+        console.log('b')
+        i++
+        if (i > 10) {
+            clearInterval(bb)
+        }
+    }, 1000);
+
+</script>
+</body>
+</html>

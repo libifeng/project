@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <p v-if="seen">你猜我是谁</p>
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            seen:ture,
+        }
+    })
+</script>
+</body>
+</html>

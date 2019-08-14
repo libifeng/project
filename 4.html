@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <ul v-for="todo in down">
+        姓名  {{todo.name}}
+        年龄  {{todo.age}}
+        性别 {{todo.sex}}
+
+    </ul>
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+           down:[
+               {
+                   name:"玛丽",
+                   age:'18',
+                   sex:'女'
+               },
+               {
+                   name:"黎明",
+                   age:"34",
+                   sex:'男'
+
+               },
+               {
+                    name:"西安",
+                    age:"12345",
+                   sex:'女'
+               }
+           ]
+        }
+    })
+</script>
+</body>
+</html>

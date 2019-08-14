@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <ol>
+        <li v-for="todo in todos">
+            {{todo.type}}
+            {{todo.value}}
+        </li>
+    </ol>
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            todos:[
+                {
+                    type:"水果",
+                    value:"香蕉"
+                },
+                {
+                    type:"食物",
+                    value:"米饭"
+                }
+            ]
+        }
+    })
+</script>
+</body>
+</html>

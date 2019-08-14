@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var code="AdS6";
+    do{
+        var input=prompt("输入验证码："+code);
+         if(input.toLowerCase()!=code.toLowerCase()){
+             alert("验证码错误，请重新输入！");
+         }else{
+             break;
+         }
+    }while(true);
+    document.write("验证通过！");
+</script>
+</body>
+</html>

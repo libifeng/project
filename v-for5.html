@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="appm">
+    <ul v-for="todo in todos">
+     {{todo.type}}
+        {{todo.value}}
+    </ul>
+</div>
+<script>
+    new Vue({
+        el:"#appm",
+        data:{
+
+        todos:[
+            {
+                type:"水果",
+                value:"苹果"
+            },
+            {
+                type:"食物",
+                value:"米饭"
+            },
+        ]
+        }
+    })
+</script>
+</body>
+</html>

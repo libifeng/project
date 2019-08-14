@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var Bob={
+    sname:'鲍勃',
+    friend:['jack','rose','tom','jerry'],
+    intr(){
+        this.friends.forEach(function(friend){
+            console.log(this.sname+'认识'+friend)
+        });
+    }
+}
+Bob.intr();
+</script>
+</body>
+</html>
